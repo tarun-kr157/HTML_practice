@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Appliant Details form</title>
+    </head>
+    <body>
+        <h2>Fill in the details below</h2>
+        <fieldset>
+            <legend><h3>Registration</h3></legend>
+        <form>
+            <div> 
+            <label>Name:::::::</label>
+            <input type = "text" required pattern = "[A-Z a-z]+" minlength = "4" maxlength = "20"/>
+        </div><br> 
+        
+        <div> 
+            <label>Email:::::::</label>
+            <input type = "text" required/>
+        </div>  
+        <br>
+            <label>Password::</label>
+            <input type = "password" required minlength = "8" maxlength = "12"/><br><br>
+            <div>
+            <label>Mobile:::::</label>
+            <input type="tel" pattern="(\+91)?[6-9][0-9]{9}" required max = "12"/></div><br>
+            <label>City::::::::</label>
+            <select required>
+            <option value="" selected disabled>-- Select your city --</option>
+            <option value="agra">Agra</option>
+            <option value="bengaluru">Bengaluru</option>
+            </select>
+            <br><br>
+            <label>Country::</label>
+            <input type = "text" value = "--NA--" readonly/>
+            <br><br>
+            
+            <label>Nationality::</label>
+            <select required>
+                <option value = "" selected disabled>--Select your nationality--</option>
+                <option value = "bangladesh">Bangladeshi</option>
+                <option value = "pakistani">Pakistani</option>
+                <option value = "canadian">Canadian</option>
+                <option value = "indian">Indian</option>
+                <option value = "uae">UAE</option>
+                <option value = "kuwait">Kuwait</option>
+            <br><br>
+            </select>
+            <label><h2>Professional description:</h2></label>
+            <textarea rows = "15" cols = "30" required></textarea>
+            
+            <h4>ATTENTION!</h4>(--Review carefully, no change allowed after submission--) <br><br>
+            <input type = "submit" value = "Submit"/>
+</fieldset>
+         </form>  
+            
+
+    </body>
+
+
+</html>
