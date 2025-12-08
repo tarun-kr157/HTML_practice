@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <head>
-  <title>Practice Session: HTML & CSS</title>
+  <title>Practice-CSS</title>
+  <!-- <link rel="stylesheet" href="./xyz.css"> -->
+  <style>
+    {
+      background-color: green;
+        
+    }
+    </style>
+   <link rel="stylesheet" href="./xyz.css">
   
 </head>
-
-  <body>
+<body>
     <header>
       <nav>
         <div>
@@ -12,64 +19,76 @@
                <li><a href="./index.html">Index</a></li>
                <li><a href="./login.html">Login</a></li>
                <li><a href="./form.html">Form</a></li>
-               
-
-          </ul>
+               </ul>
         </div>
       </nav>
-
-    </header>
+</header>
         
 <hr/>
 
-<footer>
-  <p>
+
+  <p id ="abc">
     We review the top lightweight tents for 2025...
   </p>
+  <hr/>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, saepe.
+  </p>
+<!-- Hello -->
+  <hr/>
 
-  <hr>
-
-  <h2>
-     Section 2: The Yellow Box
+  <h2 class="demo" id="abc" >
+    Below are embedded the home page, location and review video
   </h2>
 
-  <div><iframe src="https://www.dei.ac.in/dei/" height="300" width="300"></iframe></div>
-  <div><img src="sign 3.jpg" height = "100" width = "300" alt="Company logo"></div>
+  <div>
+    <h3><span>Home Page</h3></span>
+    <iframe src="https://www.dei.ac.in/dei/" height="300" width="500"></iframe>
+  </div>
+    <div>
+      <h3><span>Geo-location</h3></span>
+         <iframe width="500" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.9312247745894!2d78.01252760958268!3d27.227785671219433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397479f97de6b363%3A0x8b2eff7491666ffa!2sDayalbagh%20Educational%20Institute%20(Deemed%20University)%20Agra!5e0!3m2!1sen!2sin!4v1765124823448!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div>
+      <h3><span>Watch Review</h3></span>
+         <iframe width="500" height="300" src="https://www.youtube.com/embed/92dNp2Dd71s?si=3OlqrfDje-47yBtS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
+  </div>
+  <hr/> 
+   <p>
+    This division has a different <mark>unique ID</mark>, allowing it to have a yellow background and be aligned in the center.
+   </p>
 
+ <hr />
 
-  <p>This division has a different unique ID, allowing it to have a yellow background and be aligned in the center.</p>
-
-   <hr />
-
-  <p>
-  This section covers the basics of web design, focusing on color theory and typography. We will start by looking at
+    <p>
+    This  section covers the basics of web design, focusing on color theory and typography. We will start by looking at
     primary colors.
-  </p>
+    </p>
 
-  <hr>
+  <hr/>
 
   <p>
     The next section shifts entirely to server-side scripting. We will begin exploring how Python handles data requests
     from a web browser.
   </p>
 
-  <hr />
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque enim temporibus eos qui similique quisquam,
-    doloremque vel, voluptas numquam recusandae, soluta nihil ullam accusamus magnam est eum cumque beatae! Doloribus.
-  </p>
-  <hr />
-  <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, non!
-  </p>
+  <hr/>
+    
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, officia.
+    </p>
+  
+  <hr/>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
 
-  <hr />
+   <hr />
   <ul>
     <li>HTML</li>
     <li>Web development</li>
     <li>Bootstrap.css</li>
     <li>Javascript</li>
-
   </ul>
   <hr />
   <ol type='I'>
@@ -78,42 +97,36 @@
     <li>Node.JS</li>
     <li>Django</li>
   </ol>
-  <hr />
-  <table border="6">
+  <hr/>
+  <table border="3">
     <thead>
       <th> Roll</th>
       <th> Name</th>
       <th> Marks</th>
 
-    <tbody>
+     <tbody>
       <tr>
-
         <td>101</td>
         <td>Tarun</td>
         <td rowspan="2">90</td>
       </tr>
 
       <tr>
-
         <td>102</td>
         <td>Mayank</td>
-
       </tr>
       <tr>
-
         <td>103</td>
         <td Colspan="2">Rishabh</td> <!--dfsdhvcbcb-->
-
       </tr>
 
-    </tbody>
+       </tbody>
     </thead>
-
   </table>
   <hr/>
 
-  <h3>
-    <center>Registration Details</center>
+  <h3 id="abc">
+    Registration Details
   </h3>
        <form>
         <label>Name::&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
@@ -126,7 +139,6 @@
         <input type = "date"/> <br><br>
         <input type = "time"/> <br><br>
         <input type = ""/> <br><br>
-      
         <label>Gender::</label> 
         <input type ="radio" name = "gender_Val"/> Male
         <input type ="radio" name = "gender_Val"/> Female <br><br>
@@ -135,9 +147,7 @@
         <input type = "button" value = "Login"/>
         <button type = "submit"/></button><br><br>
         <input type = "file">
-        
-        
-        <h4><label for="">Preferred centre:</label></h4>
+        <h4><label for="">Preferred centres:</label></h4>
         <input type = "checkbox" >Agra
         <input type = "checkbox" >Tiruchi
         <input type = "checkbox" >Madurai
@@ -149,20 +159,18 @@
         <option>MH</option>
         <option>UP</option>
         <option>WB</option>
-        
-      </select>
+        </select>
       <br><br>
         <label>Describe Yourself:</label>
         <textarea cols="25", rows=""20"></textarea>
        </form>
-       <h3>About Bangalore</h3>
-       <p>Bangalore, officially Bengaluru, is the capital of Karnataka, India, famous as <span style="background-color: yellow; color: magenta; font-size: 30px;"> the nation's "Silicon Valley"</span>due to its booming IT sector, while also known as the "Garden City" for its greenery, offering a pleasant climate, rich cultural 
+       <hr/>
+       <h3><span>About Bangalore</h3></span>
+       <p>Bangalore, officially Bengaluru, is the capital of Karnataka, India, famous as <span style="background-color: yellow; color: magenta; font-size: 30px; font-style: oblique;"> the nation's "Silicon Valley"</span>due to its booming IT sector, while also known as the "Garden City" for its greenery, offering a pleasant climate, rich cultural 
         diversity, and being a major hub for education, research, and entrepreneurship in Southern India. Situated on the Deccan Plateau, it's one of India's largest and fastest-growing cities, attracting people from across the country and the world. </p>
        <hr/>
-        <p>Bangalore, officially Bengaluru, is the capital of Karnataka, India, famous as <mark style="background: lightgreen; color: blue; padding: 5px; font-size: 30px;">the nation's "Silicon Valley"</mark> due to its booming IT sector, while also known as the "Garden City" for its greenery, offering a pleasant climate, rich cultural 
-        diversity, and being a major hub for education, research, and entrepreneurship in Southern India. Situated on the Deccan Plateau, it's one of India's largest and fastest-growing cities, attracting people from across the country and the world. </p>
-      <hr/>
-      <figure>
+        
+       <figure>
         <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGDXe7xvSrjQtefl4loW19DwVJ2Gu8-PbVlw&s" alt="Admission poster" width="400" height="300">
         <figcaption>MBA Programme 2026-28</figcaption>
       </figure>
@@ -172,6 +180,6 @@
         <source src="sample.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-    </footer>
+    
 </body>
 </html>
