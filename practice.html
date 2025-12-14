@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
   <title>Practice-CSS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="./xyz.css"> -->
   <style>
     {
@@ -8,17 +10,19 @@
         
     }
     </style>
-   <link rel="stylesheet" href="./xyz.css">
+   <!-- <link rel="stylesheet" href="./xyz.css"> -->
+   <link rel="stylesheet" href="./bootstrap.css">
   
-</head>
+</head>  
 <body>
     <header>
-      <nav>
+      <nav class="navbar navbar-light bg-warning navbar-expand-lg">
+       <a class="navbar-brand" href="./form.html">MBA Admissions</a> 
         <div>
-          <ul>
-               <li><a href="./index.html">Index</a></li>
-               <li><a href="./login.html">Login</a></li>
-               <li><a href="./form.html">Form</a></li>
+          <ul class="navbar-nav">
+               <li class="nav-item"><a class="nav-link" href="./index.html">Index</a></li>
+               <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+               <li class="nav-item"><a class="nav-link" href="./Registration.html" target="_blank">Form</a></li>
                </ul>
         </div>
       </nav>
@@ -37,7 +41,7 @@
 <!-- Hello -->
   <hr/>
 
-  <h2 class="demo" id="abc" >
+  <h2 >
     Below are embedded the home page, location and review video
   </h2>
 
@@ -125,7 +129,7 @@
   </table>
   <hr/>
 
-  <h3 id="abc">
+  <h3 class="demo" id="abc">
     Registration Details
   </h3>
        <form>
@@ -138,15 +142,16 @@
         <label>DOB::</label><br>
         <input type = "date"/> <br><br>
         <input type = "time"/> <br><br>
-        <input type = ""/> <br><br>
+        <input type = "datetime-local"/> <br><br>
+        <input type = "url"/ placeholder="Paste the Github URL"> <br><br>
         <label>Gender::</label> 
         <input type ="radio" name = "gender_Val"/> Male
         <input type ="radio" name = "gender_Val"/> Female <br><br>
-        <input type = "submit" value = "Signup"/>
-        <input type = "Reset" value = "Cancel"/> <br>
+         Upload Resume:::<input type = "file"><br><br>
+        <input class = "btn btn-primary" type = "submit" value = "Signup"/>
+        <input class = "btn btn-outline-danger" type = "Reset" value = "Cancel"/> <br><br>
         <input type = "button" value = "Login"/>
         <button type = "submit"/></button><br><br>
-        <input type = "file">
         <h4><label for="">Preferred centres:</label></h4>
         <input type = "checkbox" >Agra
         <input type = "checkbox" >Tiruchi
@@ -166,7 +171,7 @@
        </form>
        <hr/>
        <h3><span>About Bangalore</h3></span>
-       <p>Bangalore, officially Bengaluru, is the capital of Karnataka, India, famous as <span style="background-color: yellow; color: magenta; font-size: 30px; font-style: oblique;"> the nation's "Silicon Valley"</span>due to its booming IT sector, while also known as the "Garden City" for its greenery, offering a pleasant climate, rich cultural 
+       <p>Bangalore, officially Bengaluru, is the capital of Karnataka, India, famous as <span>the nation's "Silicon Valley"</span>due to its booming IT sector, while also known as the "Garden City" for its greenery, offering a pleasant climate, rich cultural 
         diversity, and being a major hub for education, research, and entrepreneurship in Southern India. Situated on the Deccan Plateau, it's one of India's largest and fastest-growing cities, attracting people from across the country and the world. </p>
        <hr/>
         
@@ -174,9 +179,9 @@
         <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGDXe7xvSrjQtefl4loW19DwVJ2Gu8-PbVlw&s" alt="Admission poster" width="400" height="300">
         <figcaption>MBA Programme 2026-28</figcaption>
       </figure>
-
       <hr/>
-      <audio controls preload = "metadata">
+      <h3><span>Multimedia elements</span></h3>
+      <audio controls preload = "none">
         <source src="sample.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>

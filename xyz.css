@@ -2,18 +2,29 @@
 span{
     background-color: lightgreen;
     padding: 2px;
+     font-style: oblique;    
 }
 
 .demo{
 
     background-color: lightblue;
-    padding: 10px;
+    
 }   
 
+a[target]
+{
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+}   
 
 #abc{
 
-    background-color: lightcoral;
+    
     text-align: center;
+    padding: 3px;
    
 }
+*{
+    font-style : italic;
+}   
